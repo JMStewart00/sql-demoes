@@ -4,10 +4,10 @@
 
 tasks:
   - init: |
-      pip install -r requirements.txt
       docker compose pull
   - command: |
       docker compose up -d
+      pip install -r requirements.txt
 
 ports:
   - port: 8000
