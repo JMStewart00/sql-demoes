@@ -1,6 +1,6 @@
 from connection import create_connection
 
-connection = create_connection("./test_db.db")
+connection = create_connection("postgres", "postgres", "postgres")
 cursor = connection.cursor()
 
 def execute_query(connection, query):
@@ -9,12 +9,12 @@ def execute_query(connection, query):
         cursor.execute(query)
         connection.commit()
         print("Query executed successfully")
-    except Error as e:
+    except BaseException as e:
         print(f"The error '{e}' occurred")
 
 create_users_table = """
 CREATE TABLE IF NOT EXISTS users (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  id SERIAL PRIMARY KEY,
   name TEXT NOT NULL,
   age INTEGER,
   gender TEXT,
