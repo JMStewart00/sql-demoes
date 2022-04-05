@@ -15,3 +15,5 @@ def create_connection(db_name, db_user, db_password, db_host = "localhost", db_p
     except OperationalError as e:
         print(f"The error '{e}' occurred")
     return connection
+
+create_connection("postgres", "postgres", "postgres")
