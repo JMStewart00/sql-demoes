@@ -1,0 +1,1 @@
+# This is why you'll execute a series of SQL statements during demo day.
