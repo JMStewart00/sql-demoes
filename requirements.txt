@@ -5,6 +5,7 @@ asttokens==2.0.5
 attrs==21.4.0
 autopep8==1.6.0
 backcall==0.2.0
+backports.zoneinfo==0.2.1
 bandit==1.7.4
 bleach==4.1.0
 certifi==2021.10.8
@@ -64,7 +65,8 @@ platformdirs==2.5.1
 pluggy==1.0.0
 prometheus-client==0.13.1
 prompt-toolkit==3.0.28
-psycopg2==2.9.3
+psycopg==3.0.11
+psycopg-binary==3.0.11
 ptyprocess==0.7.0
 pure-eval==0.2.2
 py==1.11.0

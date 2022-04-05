@@ -1,11 +1,11 @@
-import psycopg2
-from psycopg2 import OperationalError
+import psycopg
+from psycopg import OperationalError
 
-def create_connection(db_name, db_user, db_password, db_host, db_port):
+def create_connection(db_name, db_user, db_password, db_host = "localhost", db_port = "5432"):
     connection = None
     try:
-        connection = psycopg2.connect(
-            database=db_name,
+        connection = psycopg.connect(
+            dbname=db_name,
             user=db_user,
             password=db_password,
             host=db_host,
