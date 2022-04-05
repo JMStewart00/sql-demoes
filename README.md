@@ -4,6 +4,7 @@
 1. Start up the project by creating a new Gitpod workspace. During that process the repo will automatically use docker to set up all the dependencies and set up a database for you with pgadmin enabled. Additionally all of the python modules should be installed as well. 
 1. Credentials for the pgadmin/database are in the docker-compose file.
 1. Default database information is in the pgadmin_import.json file.
+1. Copy & Paste the superheroes.sql file into PGAdmin to get the default setup.
 1. Execute/run the connection.py file and if the connection prints "Connection to PostgreSQL DB successful" you're good to go.
 
 ### pgAdmin 4
